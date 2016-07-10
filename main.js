@@ -1,19 +1,42 @@
 $(function(){
+
+
+
   $(document).keypress(function(event){
-      createNum();
-      if(event.which==115){
+    if($('#clinton').css('marginLeft') < '90%'){
+      if(event.which==113){
         $('#clinton').animate({
           marginLeft: "+=" + createNum() +"%"
-      });
-  }
+        });
+        $('#clinton').clearQueue();
+      }
+    }else{
+      alert("hillary has won");
+    }
+  });
   $(document).keypress(function(event){
-      createNum();
+    if($('#trump').css('marginLeft') < '90%'){
       if(event.which==108){
         $('#trump').animate({
-        marginLeft: "+=" + createNum() +"%"
+          marginLeft: "+=" + createNum() +"%"
         });
+        $('#trump').clearQueue();
       }
+    }else{
+      alert("trum has won");
+    }
   });
+  $(document).keypress(function(event){
+    if($('#bernie').css('marginLeft') < '90%'){
+      if(event.which==98){
+        $('#bernie').animate({
+          marginLeft: '+=10%'
+        });
+        $('#bernie').clearQueue();
+      }
+    }else{
+      alert("bernie has won");
+    }
   });
 });
 function createNum(){

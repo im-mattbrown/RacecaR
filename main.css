@@ -1,17 +1,22 @@
 h1 {
   font-family: sans-serif;
-  color: blue;
+  color: white;
+  text-align: center;
+  font-size: 60px;
 }
 body{
   background-color: blue;
 }
+.hillary{
+  margin: 0% 25% 0% 15%;
+}
+.trump{
+  margin: 0% 15% 0% 15%;
+}
+.bernie{
+  margin-left: 25%;
+}
 #clinton{
-
 }
-.america {
-  z-index: 1;
-}
-.fuckyeah {
-  z-index: 1;
-
+#trump{
 }
