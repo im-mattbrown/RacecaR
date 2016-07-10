@@ -6,12 +6,12 @@ body{
   background-color: blue;
 }
 #clinton{
-  position:absolute;
+
 }
 .america {
   z-index: 1;
 }
 .fuckyeah {
-  z-index: 3;
-  background-color: blue;
+  z-index: 1;
+
 }

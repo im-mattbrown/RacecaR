@@ -1,25 +1,27 @@
 $(function(){
-  console.log("this is here");
   $(document).keypress(function(event){
-    //var keycode = (event.keyCode ? event.keyCode : event.which);
+      createNum();
       if(event.which==115){
-      $('#clinton').animate({
-        marginLeft: "+=5%"
+        $('#clinton').animate({
+          marginLeft: "+=" + createNum() +"%"
       });
-    }
+  }
   $(document).keypress(function(event){
+      createNum();
       if(event.which==108){
         $('#trump').animate({
-        marginLeft: "+=5%"
-      });
-
+        marginLeft: "+=" + createNum() +"%"
+        });
       }
-    });
+  });
   });
 });
+function createNum(){
+var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var randomNum = nums[Math.floor(Math.random() * nums.length)];
+return randomNum;
+}
 
-
-console.log("outside of $");
 
 
 //var keycode = (event.keyCode ? event.keyCode : event.which);
