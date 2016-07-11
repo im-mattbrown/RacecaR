@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <!-- Script links -->
     <script src="http://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
@@ -12,9 +13,9 @@
   <header>
     <h1>Race to the Whitehouse 2016</h1>
     <h3>Click Buttons to Select Your Cadidates</h3>
-    <span class="hillary"><img src="http://i.imgur.com/Yo5AOYn.png"</img></span>
-    <span class="donald"><img src="http://i.imgur.com/Kn9zleG.png"</img></span>
-    <span class="bernie"><img src="http://i.imgur.com/2NkEHs0.png"</img></span>
+    <span class="hillary"><img src="http://i.imgur.com/Yo5AOYn.png"></span>
+    <span class="donald"><img src="http://i.imgur.com/Kn9zleG.png"></span>
+    <span class="bernie"><img src="http://i.imgur.com/2NkEHs0.png"></span>
   </header>
     <div class="track">
         <div class="playerOne">
@@ -24,20 +25,29 @@
         <div class="playerThree">
         </div>
     </div>
-    <div class="trumpwins">
+    <div class="winners">
+        <div class="trumpwins">
+        </div>
+        <div class="berniewins">
+        </div>
+        <div class="hillarywins">
+        </div>
     </div>
-    <div class="berniewins">
+    <div class="finish clearfix">
+      <img src="http://i.imgur.com/3ulDc0T.png"></img>
     </div>
-    <div class="hillarywins">
+    <div class="buttons">
+    <button class="ready">Ready</button>
+    <button class="reset">Play Again</button>
     </div>
-    <form>
-      <input class="ready" type="button" value="Ready">
-      <input type="button" onClick="history.go(0)" value="Race Again">
-    </form>
+    <div class="instructions">
+
+    </div>
     <footer>
-      <span class="hildog">Hill Dog = [Enter]</span>
-      <span class="trump">Trumpster = [Shift]</span>
-      <span class="sanders">The Bern = [Space]</span>
+      <p class="instructions">Tap the Following Keys to Move Your Candidate</p>
+      <span class="hildog col-md-4">Hill Dog = [Enter]</span>
+      <span class="trumpster col-md-4">Trumpster = [Shift]</span>
+      <span class="sanders col-md-4">The Bern = [Space]</span>
     </footer>
   </body>
 </html>

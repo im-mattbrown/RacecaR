@@ -3,18 +3,17 @@ h1 {
   color: white;
   text-align: center;
   font-size: 60px;
+  text-shadow: 2px 2px 2px black;
 }
 h3{
   text-align: center;
   color: white;
   font-size: 29px;
+  text-shadow: 2px 2px 2px black;
 }
 header{
-  background-image: url('http://i.imgur.com/Ik5pmP5.jpg');
+  background-image: url('http://i.imgur.com/ecLhMvE.png');
   background-size: cover;
-}
-body{
-  background-color: rgb (37, 56, 112);
 }
 .hillary{
   margin: 0% 25% 0% 15%;
@@ -25,28 +24,20 @@ body{
 .bernie{
   margin-left: 25%;
 }
-#hilllary{
-  margin-left: 0%;
+#clinton{
+  margin-left: auto;
+  z-index: 3;
 }
 #trump{
-  margin-left: 0%;
+  margin-left: auto;
+  z-index: 3;
 }
 #bernie{
-  margin-left: 0%;
+  margin-left: auto;
+  z-index: 3;
 }
 .assignment{
   display: inline;
-}
-.hildog{
-  margin: 0% 3% 0% 15%;
-  font-size: 20px;
-}
-.trump{
-  margin-right: 15%;
-  font-size: 20px;
-}
-.sanders{
-font-size: 20px;
 }
 form{
   display: block;
@@ -58,26 +49,63 @@ input {
   border-radius: 5px;
 }
 .playerOne{
-background-color: red;
+background-color: rgb(179, 34, 52);
 }
 .playerThree{
-  background-color: blue;
+  background-color: rgb(45, 59, 150);
 }
 .trumpwins{
-  z-index: 2;
+  z-index: 4;
   position: absolute;
   top: 25%;
   left: 25%
 }
 .berniewins{
-  z-index: 2;
+  z-index: 4;
   position: absolute;
   top: 25%;
   left: 25%
 }
 .hillarywins{
-  z-index: 2;
+  z-index: 4;
   position: absolute;
   top: 25%;
   left: 25%;
+}
+.footer{
+  positon: absolute;
+  bottom: 0;
+}
+.instructions{
+  text-align: center;
+}
+.finish{
+  position: fixed;
+  top: 223px;
+  right: 0;
+}
+.clearfix:after{
+  overflow: auto;
+  display: table;
+  clear: both;
+}
+.hildog{
+  font-size: 20px;
+}
+.trumpster{
+  font-size: 20px;
+}
+.sanders{
+  font-size: 20px;
+}
+.ready{
+  background-color: rgb(179, 34, 52);
+  color: white;
+}
+.reset{
+  background-color: rgb(60, 59, 110);
+  color: white;
+}
+.buttons{
+  align-items: center;
 }
