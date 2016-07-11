@@ -1,9 +1,17 @@
 $(function(){
-
-
+  console.log("hey");
+  $('.hillary').one('click', function(){
+    $('.playerOne').append('<img id="clinton"src="http://i.imgur.com/QCT8uLb.png"></img>');
+  });
+  $('.donald').one('click', function(){
+    $('.playerTwo').append('<img id="trump"src="http://i.imgur.com/tsUDnqG.png"></img>');
+  });
+  $('.bernie').one('click', function(){
+    $('.playerThree').append('<img id="bernie"src="http://i.imgur.com/pWvBDKC.png"></img>');
+  });
 
   $(document).keypress(function(event){
-    if($('#clinton').css('marginLeft') < '90%'){
+    if($('#clinton').css('margin-left') <= '90' +'%'){
       if(event.which==113){
         $('#clinton').animate({
           marginLeft: "+=" + createNum() +"%"
@@ -15,8 +23,8 @@ $(function(){
     }
   });
   $(document).keypress(function(event){
-    if($('#trump').css('marginLeft') < '90%'){
-      if(event.which==108){
+    if($('#trump').css('margin-left') <='90' +'%'){
+      if(event.which==107){
         $('#trump').animate({
           marginLeft: "+=" + createNum() +"%"
         });
@@ -27,7 +35,7 @@ $(function(){
     }
   });
   $(document).keypress(function(event){
-    if($('#bernie').css('marginLeft') < '90%'){
+    if($('#bernie').css('margin-left') <= '90'+'%'){
       if(event.which==98){
         $('#bernie').animate({
           marginLeft: '+=10%'
