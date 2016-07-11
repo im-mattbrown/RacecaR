@@ -7,9 +7,14 @@ h1 {
 h3{
   text-align: center;
   color: white;
+  font-size: 29px;
+}
+header{
+  background-image: url('http://i.imgur.com/Ik5pmP5.jpg');
+  background-size: cover;
 }
 body{
-  background-color: blue;
+  background-color: rgb (37, 56, 112);
 }
 .hillary{
   margin: 0% 25% 0% 15%;
@@ -33,17 +38,46 @@ body{
   display: inline;
 }
 .hildog{
-  margin: 0% 7% 0% 15%;
-  color: white;
+  margin: 0% 3% 0% 15%;
+  font-size: 20px;
 }
 .trump{
-  margin-right: 22%;
-  color: white
+  margin-right: 15%;
+  font-size: 20px;
 }
 .sanders{
-  color: white;
+font-size: 20px;
 }
 form{
   display: block;
   text-align: center;
+}
+input {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.playerOne{
+background-color: red;
+}
+.playerThree{
+  background-color: blue;
+}
+.trumpwins{
+  z-index: 2;
+  position: absolute;
+  top: 25%;
+  left: 25%
+}
+.berniewins{
+  z-index: 2;
+  position: absolute;
+  top: 25%;
+  left: 25%
+}
+.hillarywins{
+  z-index: 2;
+  position: absolute;
+  top: 25%;
+  left: 25%;
 }
